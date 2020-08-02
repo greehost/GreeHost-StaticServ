@@ -15,11 +15,11 @@ firewall-cmd --reload
 
 # Make a directory to store SSL certifcates and webroots
 mkdir -p /etc/staticserv/ssl
-chown root.nginx /etc/staticserv/ssl
+chown root:nginx /etc/staticserv/ssl
 chmod 0750 /etc/staticserv/ssl
 
 mkdir -p /var/www
-chown root.nginx /var/www
+chown root:nginx /var/www
 chmod 0750 /var/www
 
 # Ask SELinux to please let us have access to files
